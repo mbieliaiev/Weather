@@ -1,0 +1,5 @@
+<div class="selected-cities" *ngIf="selectedCities.length > 0">
+    <div class="selected-city" *ngFor="let city of selectedCities">
+        <app-weather [city]="city" (onRemoveCityEvent)="removeCityHandler($event)"/>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.weather-info-container {
+    color: white;
+    margin-top: 10px;
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .location {
+        font-size: 18px;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

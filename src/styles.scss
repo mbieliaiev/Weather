@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+// .main-container {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+
+// .header {
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+// }
+
+.filler {
+    width: 100%;
+    background: #0AA4B4;
+}
+
+.header-filler-10 {
+    @extend .filler;
+    height: 10px;
+}
+
+.footer-filler {
+    @extend .filler;
+    height: 80px;
+    margin-top: auto;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+
+    .footer-content {
+        color: white;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+}
+
+.logo {
+    width: 20%;
+    margin-left: 5%;
+}
+
+.application {
+    margin-top: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('../assets/fonts/meteocons/meteocons-webfont.eot');
+    src: url('../assets/fonts/meteocons/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/meteocons/meteocons-webfont.woff') format('woff'),
+         url('../assets/fonts/meteocons/meteocons-webfont.ttf') format('truetype'),
+         url('../assets/fonts/meteocons/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

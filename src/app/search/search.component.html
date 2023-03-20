@@ -1,0 +1,13 @@
+<mat-icon>location_on</mat-icon>
+<mat-form-field>
+  <mat-label>City</mat-label>
+  <input type="text" matInput [formControl]="cityControl" [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectionChanged($event)">
+      <mat-option *ngFor="let city of cities" [value]="city.name">
+      {{ city.name }}, {{ city.country }}
+      </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
+<button mat-icon-button color="primary" [disabled]="!selectedCity" (click)="onAddCity()">
+  <mat-icon>add</mat-icon>
+</button>

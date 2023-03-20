@@ -1,0 +1,12 @@
+.weather-container {
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin: 10px;
+}

@@ -1,0 +1,5 @@
+<div [style.background-color]="backgroundColor" class="weather-container">
+    <app-weather-icon [iconName]="weatherIcon"></app-weather-icon>
+    <app-weather-info [temperature]="city.current.temperature" [location]="location"></app-weather-info>
+    <mat-icon (click)="onRemoveCity(city)">highlight_off</mat-icon>
+</div>
